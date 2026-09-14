@@ -4,6 +4,7 @@ import { Topbar } from './components/Topbar';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { AboutPage } from './pages/AboutPage';
+import { ServicesPage } from './pages/ServicesPage';
 
 export function App() {
   return (
@@ -15,7 +16,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<div className="p-12 text-center text-xl text-slate-600 font-semibold">Próximamente: Página de Servicios detallados</div>} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<div className="p-12 text-center text-xl text-slate-600 font-semibold">Próximamente: Página de Contacto y Cotizaciones</div>} />
         </Routes>
       </div>

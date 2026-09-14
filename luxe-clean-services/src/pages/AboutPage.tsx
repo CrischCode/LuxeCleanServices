@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { historyAboutUs } from '../components/data/content';
+import { CallToActionBanner } from '../components/CallToActionBanner';
 import { ChevronDown, ChevronUp, CheckCircle2, ShieldCheck } from 'lucide-react';
 import logoImage from '/src/assets/Logo.jpeg';
 
@@ -48,7 +49,6 @@ export const AboutPage: React.FC = () => {
           </h1>
         </div>
 
-        {/* Onda decorativa */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none">
           <svg 
             className="relative block w-full h-16 sm:h-24 md:h-32 text-white" 
@@ -61,8 +61,6 @@ export const AboutPage: React.FC = () => {
           </svg>
         </div>
       </div>
-
-      {/*SECCIÓN PRINCIPALs */}
       <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#d9e1f1]">
         <div className="max-w-7xl mx-auto">
           
@@ -127,8 +125,7 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* seccion Meet Our Founder  */}
-      <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-justify">
+      <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#d9e1f1]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -184,7 +181,7 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-5 flex justify-center order-1 lg:order-2">
               <div className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-square rounded-2xl overflow-hidden shadow-sm border border-[#d9e1f1]/80 bg-white p-4">
                 <img 
-                  src="" 
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop" 
                   alt="Duanis Sifontes - Founder" 
                   className="w-full h-full object-cover object-top rounded-lg"
                 />
@@ -194,7 +191,7 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
-
+      <CallToActionBanner />
     </div>
   );
 };

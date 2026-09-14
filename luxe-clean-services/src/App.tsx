@@ -4,9 +4,10 @@ import { Topbar } from './components/Topbar';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { AboutPage } from './pages/AboutPage';
+import { LocationsPage } from './pages/LocationsPage';
 
 export function App() {
-  return (
+  return ( 
     <Router>
       <div className="min-h-screen bg-slate-50 font-sans">
         <Topbar />
@@ -16,7 +17,7 @@ export function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<div className="p-12 text-center text-xl text-slate-600 font-semibold">Próximamente: Página de Servicios detallados</div>} />
-          <Route path="/contact" element={<div className="p-12 text-center text-xl text-slate-600 font-semibold">Próximamente: Página de Contacto y Cotizaciones</div>} />
+          <Route path="/locations" element={<LocationsPage />} />
         </Routes>
       </div>
     </Router>

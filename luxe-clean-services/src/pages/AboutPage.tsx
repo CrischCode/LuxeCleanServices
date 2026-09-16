@@ -3,6 +3,7 @@ import { historyAboutUs } from '../components/data/content';
 import { CallToActionBanner } from '../components/CallToActionBanner';
 import { ChevronDown, ChevronUp, CheckCircle2, ShieldCheck } from 'lucide-react';
 import logoImage from '/src/assets/Logo.jpeg';
+import { WhatsAppButton } from '../components/WhatsAppButton';
 
 export const AboutPage: React.FC = () => {
   const [openAccordion, setOpenAccordion] = useState<number | null>(0);
@@ -187,6 +188,7 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
       <CallToActionBanner />
+      <WhatsAppButton />
     </div>
   );
 };

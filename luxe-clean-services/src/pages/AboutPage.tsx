@@ -3,6 +3,7 @@ import { historyAboutUs } from '../components/data/content';
 import { CallToActionBanner } from '../components/CallToActionBanner';
 import { ChevronDown, ChevronUp, CheckCircle2, ShieldCheck } from 'lucide-react';
 import logoImage from '/src/assets/Logo.jpeg';
+import { WhatsAppButton } from '../components/WhatsAppButton';
 
 export const AboutPage: React.FC = () => {
   const [openAccordion, setOpenAccordion] = useState<number | null>(0);
@@ -31,11 +32,6 @@ export const AboutPage: React.FC = () => {
       
       <div className="relative bg-[#192338] text-white pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden flex flex-col items-center justify-between">
         <div className="absolute inset-0 opacity-30 mix-blend-overlay">
-          <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop" 
-            alt="Cleaning background" 
-            className="w-full h-full object-cover object-center"
-          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#192338] via-transparent to-transparent"></div>
 
@@ -192,6 +188,7 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
       <CallToActionBanner />
+      <WhatsAppButton />
     </div>
   );
 };

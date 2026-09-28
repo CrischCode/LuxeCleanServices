@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { servicesData } from '../components/data/servicesData';
 import { CallToActionBanner } from '../components/CallToActionBanner';
+import { WhatsAppButton } from '../components/WhatsAppButton';
 import { CheckCircle2, ArrowRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -167,6 +168,7 @@ export const ServicesPage: React.FC = () => {
       )}
 
       <CallToActionBanner />
+      <WhatsAppButton />
     </div>
   );
 };

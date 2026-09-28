@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { servicesData } from '../components/data/servicesData';
 import { CallToActionBanner } from '../components/CallToActionBanner';
-import { CheckCircle2, Sparkles, ArrowRight, X } from 'lucide-react';
+import { CheckCircle2, ArrowRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const ServicesPage: React.FC = () => {
@@ -15,13 +15,6 @@ export const ServicesPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen relative font-sans text-[#192338]">
       <div className="relative bg-[#192338] text-white pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden flex flex-col items-center justify-between">
-        <div className="absolute inset-0 opacity-30 mix-blend-overlay">
-          <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop" 
-            alt="Services Background" 
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#192338] via-transparent to-transparent"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 text-center z-10 space-y-3 mb-12 md:mb-16">
@@ -73,6 +66,7 @@ export const ServicesPage: React.FC = () => {
           ))}
         </div>
       </section>
+
       <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-16">
           {filteredServices.map((service) => (
@@ -89,9 +83,6 @@ export const ServicesPage: React.FC = () => {
 
               <div className="w-[85%] sm:w-[75%] bg-white -mt-20 sm:-mt-24 relative z-10 p-6 sm:p-8 rounded-2xl shadow-xl border border-[#d9e1f1]/60 text-center flex flex-col items-center justify-between transition-transform duration-500 group-hover:-translate-y-2">
                 <div className="space-y-3">
-                  <div className="w-10 h-10 mx-auto bg-[#31487a]/10 text-[#31487a] rounded-xl flex items-center justify-center">
-                    <Sparkles className="w-5 h-5" />
-                  </div>
                   <h3 className="text-xl sm:text-2xl font-medium text-[#192338] tracking-tight">
                     {service.title}
                   </h3>
@@ -115,6 +106,7 @@ export const ServicesPage: React.FC = () => {
           ))}
         </div>
       </section>
+
       {activeModalService && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl border border-[#d9e1f1] text-left max-h-[90vh] overflow-y-auto">
@@ -173,8 +165,8 @@ export const ServicesPage: React.FC = () => {
           </div>
         </div>
       )}
-      <CallToActionBanner />
 
+      <CallToActionBanner />
     </div>
   );
 };

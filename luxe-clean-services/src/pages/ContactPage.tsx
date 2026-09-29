@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Send, CheckCircle2, Navigation, ExternalLink } fro
 import { contactData, cleaningServicesList, emergencySupportData } from '../components/data/contactData';
 import { CallToActionBanner } from '../components/CallToActionBanner';
 import { WhatsAppButton } from '../components/WhatsAppButton';
+import { Footer } from '../components/Footer';
 
 export const ContactPage: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -315,6 +316,7 @@ export const ContactPage: React.FC = () => {
       </section>
       <CallToActionBanner />
       <WhatsAppButton />
+      <Footer />
     </div>
   );
 };

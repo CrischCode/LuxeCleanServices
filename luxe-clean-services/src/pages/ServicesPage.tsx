@@ -4,6 +4,7 @@ import { CallToActionBanner } from '../components/CallToActionBanner';
 import { WhatsAppButton } from '../components/WhatsAppButton';
 import { CheckCircle2, ArrowRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Footer } from '../components/Footer';
 
 export const ServicesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -169,6 +170,7 @@ export const ServicesPage: React.FC = () => {
 
       <CallToActionBanner />
       <WhatsAppButton />
+      <Footer />
     </div>
   );
 };

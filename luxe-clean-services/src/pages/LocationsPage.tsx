@@ -4,6 +4,7 @@ import { mainOffice, serviceAreas } from '../components/data/locationsData';
 import { CallToActionBanner } from '../components/CallToActionBanner';
 import { WhatsAppButton } from '../components/WhatsAppButton';
 import { Link } from 'react-router-dom';
+import { Footer } from '../components/Footer';
 
 export const LocationsPage: React.FC = () => {
   const handleOpenMap = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -171,7 +172,7 @@ export const LocationsPage: React.FC = () => {
 
       <CallToActionBanner />
       <WhatsAppButton />
-
+      <Footer />
     </div>
   );
 };

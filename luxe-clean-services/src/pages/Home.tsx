@@ -4,6 +4,8 @@ import { FeaturesBar } from '../components/FeaturesBar';
 import { AboutSection } from '../components/AboutSection';
 import { ServicesSection } from '../components/ServicesSection';
 import { WhatsAppButton } from '../components/WhatsAppButton';
+import { CallToActionBanner } from '../components/CallToActionBanner';
+import { Footer } from '../components/Footer';
 
 
 export const Home: React.FC = () => {
@@ -14,6 +16,8 @@ export const Home: React.FC = () => {
       <AboutSection />
       <ServicesSection /> 
       <WhatsAppButton/>
+      <CallToActionBanner />
+      <Footer />
     </div>
   );
 };

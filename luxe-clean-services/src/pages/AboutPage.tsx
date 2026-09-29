@@ -3,6 +3,7 @@ import { historyAboutUs } from '../components/data/content';
 import { CallToActionBanner } from '../components/CallToActionBanner';
 import { ChevronDown, ChevronUp, CheckCircle2, ShieldCheck } from 'lucide-react';
 import logoImage from '/src/assets/Logo.jpeg';
+import founderImage from '/src/assets/images/Fundadora.png';
 import { WhatsAppButton } from '../components/WhatsAppButton';
 import { Footer } from '../components/Footer';
 
@@ -44,6 +45,10 @@ export const AboutPage: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight">
             About <span className="text-[#d9e1f1] font-normal">Us</span>
           </h1>
+          
+          <p className="text-[#d9e1f1]/80 max-w-2xl mx-auto text-sm sm:text-base font-light pt-2 leading-relaxed">
+            Discover the values, philosophy, and professional framework that drive our commitment to excellence in every cleaning service we provide.
+          </p>
         </div>
 
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none">
@@ -58,6 +63,7 @@ export const AboutPage: React.FC = () => {
           </svg>
         </div>
       </div>
+
       <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#d9e1f1]">
         <div className="max-w-7xl mx-auto">
           
@@ -122,7 +128,7 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#d9e1f1]">
+      <section className="text-justify bg-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-[#d9e1f1]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -178,8 +184,8 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-5 flex justify-center order-1 lg:order-2">
               <div className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-square rounded-2xl overflow-hidden shadow-sm border border-[#d9e1f1]/80 bg-white p-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Duanis Sifontes - Founder" 
+                  src={founderImage} 
+                  alt="Founder - DS Luxe Clean Services" 
                   className="w-full h-full object-cover object-top rounded-lg"
                 />
               </div>
@@ -188,6 +194,7 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
+
       <CallToActionBanner />
       <WhatsAppButton />
       <Footer />
